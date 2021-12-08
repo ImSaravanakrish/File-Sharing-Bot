@@ -90,11 +90,11 @@ async def start_command(client: Client, message: Message):
         buttons = [[
             InlineKeyboardButton('ᴊᴏɪɴ ᴍʏ ᴍᴏᴠɪᴇ ɢʀᴏᴜᴘ', url=f'http://t.me/TamilMoviesChat')
             ],[
-            InlineKeyboardButton('ꜱᴜᴘᴘᴏʀᴛ ᴄʜᴀᴛ', url='https://t.me/TamilSupport''),
+            InlineKeyboardButton('ꜱᴜᴘᴘᴏʀᴛ ᴄʜᴀᴛ', url='https://t.me/TamilSupport'),
             InlineKeyboardButton('🤖 Updates', url='https://t.me/TamilBots')
             ],[
-            InlineKeyboardButton('😊 About Me", callback_data = "about'),
-            InlineKeyboardButton('🔒 Close", callback_data = "close')
+            InlineKeyboardButton('😊 About Me', callback_data='about'),
+            InlineKeyboardButton('🔒 Close', callback_data='close')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
