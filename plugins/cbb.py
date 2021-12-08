@@ -17,7 +17,7 @@ async def cb_handler(client: Bot, query: CallbackQuery):
             reply_markup = InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("🔒 Close", callback_data = "close")
+                        InlineKeyboardButton("🔒 Close", callback_data = "close"),
                         InlineKeyboardButton("↞ Back", callback_data = "Back")
                     ]
                 ]
@@ -28,11 +28,11 @@ async def cb_handler(client: Bot, query: CallbackQuery):
         buttons = [[
             InlineKeyboardButton('ᴊᴏɪɴ ᴍʏ ᴍᴏᴠɪᴇ ɢʀᴏᴜᴘ', url=f'http://t.me/TamilMoviesChat')
             ],[
-            InlineKeyboardButton('ꜱᴜᴘᴘᴏʀᴛ ᴄʜᴀᴛ', url='https://t.me/TamilSupport''),
+            InlineKeyboardButton('ꜱᴜᴘᴘᴏʀᴛ ᴄʜᴀᴛ', url='https://t.me/TamilSupport'),
             InlineKeyboardButton('🤖 Updates', url='https://t.me/TamilBots')
             ],[
-            InlineKeyboardButton('😊 About Me", callback_data = "about'),
-            InlineKeyboardButton('🔒 Close", callback_data = "close')
+            InlineKeyboardButton('😊 About Me', callback_data ='about'),
+            InlineKeyboardButton('🔒 Close', callback_data ='close')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
