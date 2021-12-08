@@ -86,15 +86,17 @@ async def start_command(client: Client, message: Message):
             except:
                 pass
         return
-    else:
-        reply_markup = InlineKeyboardMarkup(
-            [
-                [
-                    InlineKeyboardButton("😊 About Me", callback_data = "about"),
-                    InlineKeyboardButton("🔒 Close", callback_data = "close")
-                ]
-            ]
-        )
+    else:     
+        buttons = [[
+            InlineKeyboardButton('➕ Add Me To Your Groups ➕', url=f'http://t.me/MoviesLinkRoBot?startgroup=true')
+            ],[
+            InlineKeyboardButton('ꜱᴜᴘᴘᴏʀᴛ ᴄʜᴀᴛ', url='https://t.me/TamilSupport''),
+            InlineKeyboardButton('🤖 Updates', url='https://t.me/TamilBots')
+            ],[
+            InlineKeyboardButton('😊 About Me", callback_data = "about'),
+            InlineKeyboardButton('🔒 Close", callback_data = "close')
+        ]]
+        reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
             photo=random.choice(PICS),
             caption=START_MSG.format(
