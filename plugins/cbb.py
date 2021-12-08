@@ -18,8 +18,8 @@ async def cb_handler(client: Bot, query: CallbackQuery):
             reply_markup = InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("🔒 Close", callback_data = "close"),
-                        InlineKeyboardButton("↞ Back", callback_data = "Back")
+                        InlineKeyboardButton("🔒 ᴄʟᴏꜱᴇ", callback_data = "close"),
+                        InlineKeyboardButton("↞ ʙᴀᴄᴋ", callback_data = "Back")
                     ]
                 ]
             )
@@ -27,25 +27,19 @@ async def cb_handler(client: Bot, query: CallbackQuery):
        
     elif data == "Back":
         buttons = [[
-            InlineKeyboardButton('ᴊᴏɪɴ ᴍʏ ᴍᴏᴠɪᴇ ɢʀᴏᴜᴘ', url=f'http://t.me/TamilMoviesChat')
+            InlineKeyboardButton('ᴊᴏɪɴ ᴏᴜʀ ᴍᴏᴠɪᴇ ɢʀᴏᴜᴘ', url=f'http://t.me/TamilMoviesChat')
             ],[
             InlineKeyboardButton('ꜱᴜᴘᴘᴏʀᴛ ᴄʜᴀᴛ', url='https://t.me/TamilSupport'),
-            InlineKeyboardButton('🤖 Updates', url='https://t.me/TamilBots')
+            InlineKeyboardButton('🤖 ᴜᴘᴅᴀᴛᴇꜱ', url='https://t.me/TamilBots')
             ],[
-            InlineKeyboardButton('😊 About Me', callback_data ='about'),
-            InlineKeyboardButton('🔒 Close', callback_data ='close')
+            InlineKeyboardButton('😊 ᴀʙᴏᴜᴛ ᴍᴇ', callback_data ='about'),
+            InlineKeyboardButton('🔒 ᴄʟᴏꜱᴇ', callback_data ='close')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
-            caption=START_MSG.format(
-                first = message.from_user.first_name,
-                last = message.from_user.last_name,
-                username = None if not message.from_user.username else '@' + message.from_user.username,
-                mention = message.from_user.mention,
-                id = message.from_user.id
-            ),            
+            caption= f"ʜᴇʟʟᴏ {first}\n\nɪ ᴄᴀɴ ꜱᴛᴏʀᴇ ᴘʀɪᴠᴀᴛᴇ ꜰɪʟᴇꜱ ɪɴ ꜱᴘᴇᴄɪꜰɪᴇᴅ ᴄʜᴀɴɴᴇʟ ᴀɴᴅ ᴏᴛʜᴇʀ ᴜꜱᴇʀꜱ ᴄᴀɴ ᴀᴄᴄᴇꜱꜱ ɪᴛ ꜰʀᴏᴍ ꜱᴘᴇᴄɪᴀʟ ʟɪɴᴋ\n\nᴍᴀɪɴ ᴄʜᴀɴɴᴇʟ » @TamilMovies4K\nᴍᴏᴠɪᴇ ʀᴇQᴜᴇꜱᴛ ɢʀᴏᴜᴘ » @TamilMoviesChat",            
             reply_markup=reply_markup,
-            parse_mode='html'
+            disable_web_page_preview = True
         )
     elif data == "close":
         await query.message.delete()
