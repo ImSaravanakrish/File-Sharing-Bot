@@ -88,7 +88,7 @@ async def start_command(client: Client, message: Message):
         return
     else:     
         buttons = [[
-            InlineKeyboardButton('➕ Add Me To Your Groups ➕', url=f'http://t.me/MoviesLinkRoBot?startgroup=true')
+            InlineKeyboardButton('ᴊᴏɪɴ ᴍʏ ᴍᴏᴠɪᴇ ɢʀᴏᴜᴘ', url=f'http://t.me/TamilMoviesChat')
             ],[
             InlineKeyboardButton('ꜱᴜᴘᴘᴏʀᴛ ᴄʜᴀᴛ', url='https://t.me/TamilSupport''),
             InlineKeyboardButton('🤖 Updates', url='https://t.me/TamilBots')
