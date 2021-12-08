@@ -15,7 +15,7 @@ async def cb_handler(client: Bot, query: CallbackQuery):
     data = query.data
     if data == "about":
         await query.message.edit_text(
-            text = f"<b>┏━━━━━━━━━❥ ┣ Cʀᴇᴀᴛᴇʀ -> <a href=https://t.me/SaravanaKrish>✭ Iϻsαi🎭Arⱥ𝖘aภ ✭</a>\n ┣ Uᴘᴅᴀᴛᴇꜱ -> @TamilBots\n ┣ 𝖲ᴜᴘᴘᴏʀᴛ -> @TamilSupport\n ┗━━━━━━━━━❥",
+            text = f"<b>┏━━━━━━━━━❥\n ┣ Cʀᴇᴀᴛᴇʀ -> <a href=https://t.me/SaravanaKrish>✭ Iϻsαi🎭Arⱥ𝖘aภ ✭</a>\n ┣ Uᴘᴅᴀᴛᴇꜱ -> @TamilBots\n ┣ 𝖲ᴜᴘᴘᴏʀᴛ -> @TamilSupport\n ┗━━━━━━━━━❥",
             disable_web_page_preview = True,
             reply_markup = InlineKeyboardMarkup(
                 [
