@@ -13,7 +13,7 @@ async def cb_handler(client: Bot, query: CallbackQuery):
     data = query.data
     if data == "about":
         await query.message.edit_text(
-            text = f"╭────[🔅Rᴇɴᴀᴍᴇʀ Bᴏᴛ🔅]───⍟\n │\n ├<b>🤖 Bot Name : <a href='https://t.me/Renamer_teleroid_bot'>Movie Bot</a></b>\n │\n ├<b>📢 Channel : <a href='https://t.me/TamilBots'>TamilBots</a></b>\n │\n ├<b>👥 Support Chat : <a href='https://t.me/TamilSupport'>TamilSupport</a></b>\n │\n ├<b>💢 Source : <a href='https://github.com/imsaravanakrish'>Click Here</a></b>\n │\n ├<b>🌐 Server : <a href='https://heroku.com'>Heroku</a></b>\n │\n ├<b>📕 Library : <a href='https://github.com/pyrogram'>Pyrogram 1.2.8</a></b>\n │\n ├<b>㊙ Language: <a href='https://www.python.org'>Python 3.9.4</a></b>\n │\n ├<b>👨‍💻 Developer : <a href='https://t.me/SaravanaKrish'>✭ Iϻsαi🎭Arⱥ𝖘aภ ✭</a></b>\n │\n ├<b>🚸 Powered By : <a href='https://t.me/TamilBots'>TamilBotZ</a></b>\n │\n ╰──────[Thanks 😊]───⍟",
+            text = f"╭────[🔅Rᴇɴᴀᴍᴇʀ Bᴏᴛ🔅]───⍟\n │\n ├<b>🤖 Bot Name : <a href='https://t.me/MoviesLinkRoBot'>MoviesLinkBot</a></b>\n │\n ├<b>📢 Channel : <a href='https://t.me/TamilBots'>TamilBots</a></b>\n │\n ├<b>👥 Support Chat : <a href='https://t.me/TamilSupport'>TamilSupport</a></b>\n │\n ├<b>💢 Source : <a href='https://github.com/imsaravanakrish'>Click Here</a></b>\n │\n ├<b>🌐 Server : <a href='https://heroku.com'>Heroku</a></b>\n │\n ├<b>📕 Library : <a href='https://github.com/pyrogram'>Pyrogram 1.2.8</a></b>\n │\n ├<b>㊙ Language: <a href='https://www.python.org'>Python 3.9.4</a></b>\n │\n ├<b>👨‍💻 Developer : <a href='https://t.me/SaravanaKrish'>✭ Iϻsαi🎭Arⱥ𝖘aภ ✭</a></b>\n │\n ├<b>🚸 Powered By : <a href='https://t.me/TamilBots'>TamilBotZ</a></b>\n │\n ╰──────[Thanks 😊]───⍟",
             disable_web_page_preview = True,
             reply_markup = InlineKeyboardMarkup(
                 [
@@ -37,14 +37,8 @@ async def cb_handler(client: Bot, query: CallbackQuery):
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
-            text=START_MSG.format(
-                first = message.from_user.first_name,
-                last = message.from_user.last_name,
-                username = None if not message.from_user.username else '@' + message.from_user.username,
-                mention = message.from_user.mention,
-                id = message.from_user.id
-            ),
-            reply_markup=reply_markup,
+            text = f"ɪ ᴄᴀɴ ꜱᴛᴏʀᴇ ᴘʀɪᴠᴀᴛᴇ ꜰɪʟᴇꜱ ɪɴ ꜱᴘᴇᴄɪꜰɪᴇᴅ ᴄʜᴀɴɴᴇʟ ᴀɴᴅ ᴏᴛʜᴇʀ ᴜꜱᴇʀꜱ ᴄᴀɴ ᴀᴄᴄᴇꜱꜱ ɪᴛ ꜰʀᴏᴍ ꜱᴘᴇᴄɪᴀʟ ʟɪɴᴋ\n\nᴍᴀɪɴ ᴄʜᴀɴɴᴇʟ » @TamilMovies4K\nᴍᴏᴠɪᴇ ʀᴇQᴜᴇꜱᴛ ɢʀᴏᴜᴘ » @TamilMoviesChat",
+            reply_markup = reply_markup,
             disable_web_page_preview = True
         )
     elif data == "close":
