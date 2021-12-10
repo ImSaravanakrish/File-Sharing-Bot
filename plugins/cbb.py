@@ -27,17 +27,17 @@ async def cb_handler(client: Bot, query: CallbackQuery):
        
     elif data == "Back":
         buttons = [[
-            InlineKeyboardButton('ᴊᴏɪɴ ᴏᴜʀ ᴍᴏᴠɪᴇ ɢʀᴏᴜᴘ', url=f'http://t.me/TamilMoviesChat')
+            InlineKeyboardButton('⚜ ᴊᴏɪɴ ᴏᴜʀ ᴍᴏᴠɪᴇ ɢʀᴏᴜᴘ ⚜', url=f'http://t.me/TamilMoviesChat')
             ],[
-            InlineKeyboardButton('ꜱᴜᴘᴘᴏʀᴛ ᴄʜᴀᴛ', url='https://t.me/TamilSupport'),
-            InlineKeyboardButton('🤖 ᴜᴘᴅᴀᴛᴇꜱ', url='https://t.me/TamilBots')
+            InlineKeyboardButton('🌟 ᴍᴀɪɴ ᴄʜᴀɴɴᴇʟ 🌟', url='https://t.me/TamilMovies4K'),
+            InlineKeyboardButton('♻️ ʙᴀᴄᴋᴜᴘ ᴄʜᴀɴɴᴇʟ ♻️', url='https://t.me/TamilMovieChat')
             ],[
             InlineKeyboardButton('😊 ᴀʙᴏᴜᴛ ᴍᴇ', callback_data ='about'),
             InlineKeyboardButton('🔒 ᴄʟᴏꜱᴇ', callback_data ='close')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
-            caption= f"ʜᴇʟʟᴏ {first}\n\nɪ ᴄᴀɴ ꜱᴛᴏʀᴇ ᴘʀɪᴠᴀᴛᴇ ꜰɪʟᴇꜱ ɪɴ ꜱᴘᴇᴄɪꜰɪᴇᴅ ᴄʜᴀɴɴᴇʟ ᴀɴᴅ ᴏᴛʜᴇʀ ᴜꜱᴇʀꜱ ᴄᴀɴ ᴀᴄᴄᴇꜱꜱ ɪᴛ ꜰʀᴏᴍ ꜱᴘᴇᴄɪᴀʟ ʟɪɴᴋ\n\nᴍᴀɪɴ ᴄʜᴀɴɴᴇʟ » @TamilMovies4K\nᴍᴏᴠɪᴇ ʀᴇQᴜᴇꜱᴛ ɢʀᴏᴜᴘ » @TamilMoviesChat",            
+            text = f"ʜᴇʟʟᴏ {first}\n\nɪ ᴄᴀɴ ꜱᴛᴏʀᴇ ᴘʀɪᴠᴀᴛᴇ ꜰɪʟᴇꜱ ɪɴ ꜱᴘᴇᴄɪꜰɪᴇᴅ ᴄʜᴀɴɴᴇʟ ᴀɴᴅ ᴏᴛʜᴇʀ ᴜꜱᴇʀꜱ ᴄᴀɴ ᴀᴄᴄᴇꜱꜱ ɪᴛ ꜰʀᴏᴍ ꜱᴘᴇᴄɪᴀʟ ʟɪɴᴋ\n\nᴍᴀɪɴ ᴄʜᴀɴɴᴇʟ » @TamilMovies4K\nᴍᴏᴠɪᴇ ʀᴇQᴜᴇꜱᴛ ɢʀᴏᴜᴘ » @TamilMoviesChat",            
             reply_markup=reply_markup,
             disable_web_page_preview = True
         )
