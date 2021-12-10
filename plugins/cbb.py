@@ -6,6 +6,7 @@ from config import OWNER_ID,START_MSG
 from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton, CallbackQuery
 from database.sql import add_user, query_msg, full_userbase
 from helper_func import subscribed, encode, decode, get_messages
+from script import Scripted
 
 
 @Bot.on_callback_query()
@@ -13,7 +14,7 @@ async def cb_handler(client: Bot, query: CallbackQuery):
     data = query.data
     if data == "about":
         await query.message.edit_text(
-            text = f"<b>┏━━━━━━━━━❥\n ┣ Cʀᴇᴀᴛᴇʀ -> <a href=https://t.me/SaravanaKrish>✭ Iϻsαi🎭Arⱥ𝖘aภ ✭</a>\n ┣ Uᴘᴅᴀᴛᴇꜱ -> @TamilBots\n ┣ 𝖲ᴜᴘᴘᴏʀᴛ -> @TamilSupport\n ┗━━━━━━━━━❥",
+            text=Scripted.START_TEXT,
             disable_web_page_preview = True,
             reply_markup = InlineKeyboardMarkup(
                 [
@@ -37,7 +38,7 @@ async def cb_handler(client: Bot, query: CallbackQuery):
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
-            text = f"ʜᴇʟʟᴏ {first}\n\nɪ ᴄᴀɴ ꜱᴛᴏʀᴇ ᴘʀɪᴠᴀᴛᴇ ꜰɪʟᴇꜱ ɪɴ ꜱᴘᴇᴄɪꜰɪᴇᴅ ᴄʜᴀɴɴᴇʟ ᴀɴᴅ ᴏᴛʜᴇʀ ᴜꜱᴇʀꜱ ᴄᴀɴ ᴀᴄᴄᴇꜱꜱ ɪᴛ ꜰʀᴏᴍ ꜱᴘᴇᴄɪᴀʟ ʟɪɴᴋ\n\nᴍᴀɪɴ ᴄʜᴀɴɴᴇʟ » @TamilMovies4K\nᴍᴏᴠɪᴇ ʀᴇQᴜᴇꜱᴛ ɢʀᴏᴜᴘ » @TamilMoviesChat",            
+            text=Scripted.NEW_TXT,
             reply_markup=reply_markup,
             disable_web_page_preview = True
         )
