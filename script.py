@@ -23,3 +23,8 @@ class Scripted(object):
 ├<b>🚸 Powered By : <a href='https://t.me/TamilBots'>TamilBotZ</a></b>
 │
 ╰──────[Thanks 😊]───⍟"""
+
+NEW_TXT = """
+ʜᴇʟʟᴏ {first}\n\nɪ ᴄᴀɴ ꜱᴛᴏʀᴇ ᴘʀɪᴠᴀᴛᴇ ꜰɪʟᴇꜱ ɪɴ ꜱᴘᴇᴄɪꜰɪᴇᴅ ᴄʜᴀɴɴᴇʟ ᴀɴᴅ ᴏᴛʜᴇʀ ᴜꜱᴇʀꜱ ᴄᴀɴ ᴀᴄᴄᴇꜱꜱ ɪᴛ ꜰʀᴏᴍ ꜱᴘᴇᴄɪᴀʟ ʟɪɴᴋ
+ᴍᴀɪɴ ᴄʜᴀɴɴᴇʟ » @TamilMovies4K
+ᴍᴏᴠɪᴇ ʀᴇQᴜᴇꜱᴛ ɢʀᴏᴜᴘ » @TamilMoviesChat"""          
